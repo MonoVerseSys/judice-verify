@@ -1,0 +1,52 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fish Dice - Game Verification Script</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <script src="jquery-3.6.3.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <h1>Fish Dice - Game Verification Script</h1>
+        <ul>
+          <li>
+            <label for="server-seed">Server Seed</label>
+            <input id="server-seed" type="text" />
+          </li>
+          <li>
+            <label for="client-seed">Client Seed</label>
+            <input id="client-seed" type="text" />
+          </li>
+          <li>
+            <label for="nonce">Nonce</label>
+            <input id="nonce" type="text" />
+          </li>
+        </ul>
+        <div class="btn-wrapper">
+          <button class="reset-btn" type="reset">Reset</button>
+          <button class="calc-btn" type="button">Calculate</button>
+        </div>
+      </form>
+      <div class="result-container">
+        <label for="">Random Result (expect 1 ~ 6 Integer)</label>
+        <input id="result" type="text" />
+      </div>
+    </div>
+    <!-- script -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.6.0/ethers.umd.min.js"
+      integrity="sha512-1lb/xcQWCi0EjBt1UENM+ZYy+2/SzVZ2KLmIvO7TACAR9teKWrFgkYcXB7ytZOOPaGT+Dv7S+e+NWIOSH0IdEg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bignumber.js/9.1.1/bignumber.min.js"
+      integrity="sha512-RDkOXE/q9gnuJ/SUl8bUwbYOOXO8orhgIucuMbm3Wk8dtA/cNaUnWYrDONUwWsR//QmuPEIKyyudaP0c+EmMOQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

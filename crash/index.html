@@ -1,0 +1,55 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crash - Game Verification Script</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <script src="jquery-3.6.3.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <h1>Crash - Game Verification Script</h1>
+        <ul>
+          <li>
+            <label for="hash">Round Hash</label>
+            <input type="text" id="hash" />
+          </li>
+          <li>
+            <label for="salt">Salt (block hash)</label>
+            <input
+              type="text"
+              id="salt"
+              value="6d02d63e847d25fbe3c5ff629991556c2ba81005f031a5288cff4633bae059bc"
+            />
+          </li>
+          <li>
+            <label for="amountOfGames">Amount Of Games</label>
+            <input type="number" id="amountOfGames" min="1" value="10" />
+          </li>
+        </ul>
+        <button id="calc" type="button">Calculate</button>
+      </form>
+      <div class="table-container">
+        <h2>Hash Chain (Previous Hashes)</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Hash</th>
+              <th>Result</th>
+            </tr>
+          </thead>
+          <tbody id="prev-hashes"></tbody>
+        </table>
+      </div>
+    </div>
+    <!-- script -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.6.2/ethers.umd.min.js"
+      integrity="sha512-j9myusIW7/IPoX4VILcQXXYXqjI8j/Z6ReG8zJqI1tdw6ehOHT2DZ7h2iQm81fraokBmz130iVaOXEA2GL51Pw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
